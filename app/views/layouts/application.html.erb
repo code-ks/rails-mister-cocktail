@@ -9,30 +9,31 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
   <div class="navbar-wagon">
     <!-- Logo -->
-    <a href="/" class="navbar-wagon-brand">
-      <img src="images/logo.png" alt="logo">
+    <a href="/" class="navbar-wagon-link">
+      <h2 class="navbar-wagon-brand"><i class="fab fa-joomla"></i></h2>
     </a>
 
     <!-- Right Navigation -->
     <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-      <a href="<%= new_cocktail_path %>" class="navbar-wagon-item navbar-wagon-link">Create cocktail</a>
+      <a href="<%= new_cocktail_path %>" <i class="fas fa-plus"></i><i class="fas fa-glass-martini"></i></a>
 <!--      <a href="" class="navbar-wagon-item navbar-wagon-link">Add ingredient</a>-->
 <!--      <a href="" class="navbar-wagon-item navbar-wagon-link">Messages</a>-->
 
-      <!-- Profile picture with dropdown list -->
+      <!-- Profile picture with dropdown list-->
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+<!--          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">-->
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Log Out</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
       </div>
@@ -43,9 +44,9 @@
       <div class="dropdown">
         <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Host</a></li>
-          <li><a href="#">Trips</a></li>
-          <li><a href="#">Messagese</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
         </ul>
       </div>
     </div>

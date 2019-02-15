@@ -8,12 +8,12 @@
   <%# end %>
   <%#= link_to 'Create a new cocktail', new_cocktail_path %>
 <!--</div>-->
-
+</div>
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+        <div class="card" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, darkgray 100%), url('https://source.unsplash.com/500x400/?cocktail');">
           <div class="card-description">
             <h2><%= cocktail.name %></h2>
           </div>
@@ -22,5 +22,5 @@
       </div>
     <% end %>
   </div>
-  <%= cl_image_tag("grusx0xyod42gbzrvpoy.jpg") %>
+  <%#= cl_image_tag("grusx0xyod42gbzrvpoy.jpg") %>
 </div>
